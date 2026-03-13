@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Evghenii Conev</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet">
+  <script>
+    (function () {
+      const navEntry = performance.getEntriesByType('navigation')[0];
+      const isReload = navEntry && navEntry.type === 'reload';
+      const isBackForward = navEntry && navEntry.type === 'back_forward';
+      const isInternal = document.referrer && document.referrer.includes(window.location.host);
+      if (isBackForward || (isInternal && !isReload)) {
+        document.documentElement.classList.add('preloader-skipped');
+      }
+    })();
+  </script>
+</head>
+
+<body class="contact-page">
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo"><img src="logo.svg" alt="Logo"></div>
+      <div class="preloader-bar">
+        <div class="preloader-progress"></div>
+      </div>
+      <div class="preloader-percent">0%</div>
+    </div>
+  </div>
+
+  <div class="noise-overlay"></div>
+
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.svg" alt="ECONEV Logo">
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link">Work</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </div>
+      <a href="contact.html" class="nav-cta">Hire Me</a>
+      <button class="burger" id="burger"><span></span><span></span></button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="about.html" class="mobile-link">About</a>
+      <a href="projects.html" class="mobile-link">Work</a>
+      <a href="skills.html" class="mobile-link">Skills</a>
+      <a href="contact.html" class="mobile-link">Contact</a>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-inner">
+      <div class="page-tag reveal-up">Get in Touch</div>
+      <h1 class="page-title reveal-up" style="--delay:0.1s">Let's build<br>something<br><em
+          style="font-style:italic;color:var(--accent)">great</em>.</h1>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:40px;">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Info -->
+        <div class="contact-info">
+          <h3 class="reveal-up" style="margin-bottom: 40px;">Ready to collaborate</h3>
+          <div class="contact-items">
+            <a href="mailto:conevgadget@gmail.com" class="contact-item reveal-up" style="--delay:0.1s">
+              <div class="contact-item-icon">✉️</div>
+              <div>
+                <div class="contact-item-label">Email</div>
+                <div class="contact-item-value">conevgadget@gmail.com</div>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/evghenii-conev/" target="_blank" class="contact-item reveal-up"
+              style="--delay:0.2s">
+              <div class="contact-item-icon">💼</div>
+              <div>
+                <div class="contact-item-label">LinkedIn</div>
+                <div class="contact-item-value">Evghenii Conev</div>
+              </div>
+            </a>
+            <a href="https://dribbble.com/lizzardlab" target="_blank" class="contact-item reveal-up"
+              style="--delay:0.25s">
+              <div class="contact-item-icon">🏀</div>
+              <div>
+                <div class="contact-item-label">Dribbble</div>
+                <div class="contact-item-value">Dribbble Portfolio</div>
+              </div>
+            </a>
+            <a href="https://www.behance.net/lizzardlab" target="_blank" class="contact-item reveal-up"
+              style="--delay:0.3s">
+              <div class="contact-item-icon">🎨</div>
+              <div>
+                <div class="contact-item-label">Behance</div>
+                <div class="contact-item-value">Behance Portfolio</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Animation Section -->
+        <div class="contact-animation-wrap reveal-up" style="--delay:0.2s">
+          <div class="liquid-orb-container">
+            <div class="liquid-orb orb-1"></div>
+            <div class="liquid-orb orb-2"></div>
+            <div class="liquid-orb orb-3"></div>
+            <div class="liquid-glass-card">
+              <span class="status-dot"></span>
+              <span class="status-text">Available for new projects</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo"><img src="logo.svg" alt="ECONEV Logo"></div>
+      <div class="footer-social">
+        <a href="mailto:conevgadget@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/evghenii-conev/" target="_blank">LinkedIn</a>
+        <a href="https://www.behance.net/lizzardlab" target="_blank">Behance</a>
+        <a href="https://dribbble.com/lizzardlab" target="_blank">Dribbble</a>
+        <a href="https://www.figma.com/@evgheniiconev" target="_blank">Figma</a>
+      </div>
+      <div class="footer-copy">© 2026 Evghenii Conev. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

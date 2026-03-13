@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Evghenii Conev</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet">
+  <script>
+    (function () {
+      const navEntry = performance.getEntriesByType('navigation')[0];
+      const isReload = navEntry && navEntry.type === 'reload';
+      const isBackForward = navEntry && navEntry.type === 'back_forward';
+      const isInternal = document.referrer && document.referrer.includes(window.location.host);
+      if (isBackForward || (isInternal && !isReload)) {
+        document.documentElement.classList.add('preloader-skipped');
+      }
+    })();
+  </script>
+</head>
+
+<body class="about-page">
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo"><img src="logo.svg" alt="Logo"></div>
+      <div class="preloader-bar">
+        <div class="preloader-progress"></div>
+      </div>
+      <div class="preloader-percent">0%</div>
+    </div>
+  </div>
+
+
+  <div class="noise-overlay"></div>
+
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.svg" alt="ECONEV Logo">
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="projects.html" class="nav-link">Work</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <a href="contact.html" class="nav-cta">Hire Me</a>
+      <button class="burger" id="burger"><span></span><span></span></button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="about.html" class="mobile-link">About</a>
+      <a href="projects.html" class="mobile-link">Work</a>
+      <a href="skills.html" class="mobile-link">Skills</a>
+      <a href="contact.html" class="mobile-link">Contact</a>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-inner">
+      <div class="page-tag reveal-up">About Me</div>
+      <h1 class="page-title reveal-up" style="--delay:0.1s">The <em
+          style="font-style:italic;color:var(--accent)">mind</em><br>behind the<br>design.</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-photo-wrap reveal-up">
+          <div class="about-photo-frame">
+            <img src="about-img.png" alt="Evghenii Conev" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div class="about-badge reveal-up" style="--delay:0.3s">
+            <div class="about-badge-num">14</div>
+            <div class="about-badge-label">Years in IT</div>
+          </div>
+        </div>
+        <div class="about-content">
+          <p class="about-lead reveal-up" style="--delay:0.1s">Lead Expert UI/UX Designer, AI Prompt Engineer & Designer
+            Generalist.</p>
+          <p class="about-text reveal-up" style="--delay:0.15s">I'm Evghenii Conev — a multidisciplinary designer with
+            14 years in the IT industry and 8 years focused on UI/UX. My work spans digital product design, branding,
+            HMI interfaces, motion, and WordPress development.</p>
+          <p class="about-text reveal-up" style="--delay:0.2s">I work with AI tools daily — training teams, analyzing
+            capabilities, testing security implications and implementing AI workflows into business processes. This
+            gives my design work an edge in both efficiency and innovation.</p>
+          <p class="about-text reveal-up" style="--delay:0.25s">Based in Moldova, I've partnered with 100+ projects
+            across real estate, fintech, SaaS, food delivery, smart home, and hosting industries.</p>
+          <p class="about-text reveal-up" style="--delay:0.28s">Beyond design, I have 6 years of experience as a Sound
+            Producer and 4 years in Cyber Security — rare combinations that give me a deep, systems-level understanding
+            of digital products.</p>
+
+          <div class="about-cards reveal-up" style="--delay:0.3s">
+            <div class="about-card">
+              <div class="about-card-num">100 +</div>
+              <div class="about-card-label">Projects</div>
+            </div>
+            <div class="about-card">
+              <div class="about-card-num">8 yr</div>
+              <div class="about-card-label">UI/UX</div>
+            </div>
+            <div class="about-card">
+              <div class="about-card-num">8 yr</div>
+              <div class="about-card-label">WordPress</div>
+            </div>
+            <div class="about-card">
+              <div class="about-card-num">2 yr</div>
+              <div class="about-card-label">AI Prompt Eng.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="edu-section">
+        <span class="section-tag reveal-up">Education</span>
+        <div class="edu-grid" style="margin-top:32px;">
+          <div class="edu-card reveal-up" style="--delay:0.1s">
+            <div class="edu-year">2010</div>
+            <div class="edu-degree">Bachelor Degree</div>
+            <div class="edu-place">High School "Matei Basarab"</div>
+          </div>
+          <div class="edu-card reveal-up" style="--delay:0.15s">
+            <div class="edu-year">2012</div>
+            <div class="edu-degree">Major of Studies — Translator</div>
+            <div class="edu-place">Slavonian University — Foreign Languages (Russian, English)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accreditations -->
+  <section class="section" style="background:var(--bg-2); padding-top:80px;">
+    <div class="container">
+      <span class="section-tag reveal-up">Certifications & Accreditations</span>
+      <h2 class="section-title reveal-up" style="--delay:0.1s;margin-bottom:48px;">Accredited by<br>Industry Leaders
+      </h2>
+      <div class="acc-grid">
+        <div class="acc-item reveal-up" style="--delay:0.05s">Microsoft Accreditation</div>
+        <div class="acc-item reveal-up" style="--delay:0.1s">Google Certified</div>
+        <div class="acc-item reveal-up" style="--delay:0.15s">Vanderbilt University Accreditation</div>
+      </div>
+
+      <!-- Languages -->
+      <div style="margin-top:80px; display:grid; grid-template-columns:1fr 1fr; gap:24px; max-width:600px;">
+        <div class="edu-card reveal-up" style="--delay:0.1s">
+          <div class="edu-year">B2–C1 Advanced</div>
+          <div class="edu-degree">English</div>
+          <div class="edu-place">Professional proficiency</div>
+        </div>
+        <div class="edu-card reveal-up" style="--delay:0.15s">
+          <div class="edu-year">Native</div>
+          <div class="edu-degree">Russian</div>
+          <div class="edu-place">Mother tongue</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <div class="cta-orb cta-orb-1"></div>
+      <div class="cta-orb cta-orb-2"></div>
+      <h2 class="cta-title reveal-up">Want to work<br><em>together</em>?</h2>
+      <p class="cta-sub reveal-up" style="--delay:0.1s">Let's build something remarkable.</p>
+      <div class="cta-actions reveal-up" style="--delay:0.2s">
+        <a href="contact.html" class="btn-primary">Get in Touch <span class="btn-arrow">→</span></a>
+        <a href="projects.html" class="btn-ghost">See My Work</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo"><img src="logo.svg" alt="ECONEV Logo"></div>
+      <div class="footer-social">
+        <a href="mailto:conevgadget@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/evghenii-conev/" target="_blank">LinkedIn</a>
+        <a href="https://www.behance.net/lizzardlab" target="_blank">Behance</a>
+        <a href="https://dribbble.com/lizzardlab" target="_blank">Dribbble</a>
+        <a href="https://www.figma.com/@evgheniiconev" target="_blank">Figma</a>
+      </div>
+      <div class="footer-copy">© 2026 Evghenii Conev. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

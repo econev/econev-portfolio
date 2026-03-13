@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills — Evghenii Conev</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet">
+  <script>
+    (function () {
+      const navEntry = performance.getEntriesByType('navigation')[0];
+      const isReload = navEntry && navEntry.type === 'reload';
+      const isBackForward = navEntry && navEntry.type === 'back_forward';
+      const isInternal = document.referrer && document.referrer.includes(window.location.host);
+      if (isBackForward || (isInternal && !isReload)) {
+        document.documentElement.classList.add('preloader-skipped');
+      }
+    })();
+  </script>
+</head>
+
+<body class="skills-page">
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo"><img src="logo.svg" alt="Logo"></div>
+      <div class="preloader-bar">
+        <div class="preloader-progress"></div>
+      </div>
+      <div class="preloader-percent">0%</div>
+    </div>
+  </div>
+
+
+  <div class="noise-overlay"></div>
+
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.svg" alt="ECONEV Logo">
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link">Work</a>
+        <a href="skills.html" class="nav-link active">Skills</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <a href="contact.html" class="nav-cta">Hire Me</a>
+      <button class="burger" id="burger"><span></span><span></span></button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="about.html" class="mobile-link">About</a>
+      <a href="projects.html" class="mobile-link">Work</a>
+      <a href="skills.html" class="mobile-link">Skills</a>
+      <a href="contact.html" class="mobile-link">Contact</a>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-inner">
+      <div class="page-tag reveal-up">Expertise</div>
+      <h1 class="page-title reveal-up" style="--delay:0.1s">Skills &<br>Mastery<span
+          style="color:var(--accent)">.</span></h1>
+      <p class="page-sub reveal-up" style="--delay:0.2s">A unique combination of design, development, AI, cybersecurity
+        and audio production built over 14 years in the industry.</p>
+    </div>
+  </section>
+
+  <!-- Skill Blocks -->
+  <section class="section">
+    <div class="container">
+      <div class="skills-hero-grid">
+        <div class="skill-block featured reveal-up" style="--delay:0.05s">
+          <div class="skill-block-icon">🎨</div>
+          <h3>UI/UX Design</h3>
+          <p>8+ years designing digital products — web apps, mobile apps, Wear OS, game UIs, dashboards, landing pages
+            and enterprise systems.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Prototyping</span>
+            <span class="skill-tag">Wireframing</span>
+            <span class="skill-tag">Mobile UI</span>
+            <span class="skill-tag">Wear OS</span>
+            <span class="skill-tag">HMI</span>
+            <span class="skill-tag">Game UI</span>
+          </div>
+        </div>
+
+        <div class="skill-block reveal-up" style="--delay:0.15s">
+          <div class="skill-block-icon">🤖</div>
+          <h3>AI Prompt Engineering</h3>
+          <p>1 year specializing in AI tool integration, LLM optimization, security analysis, training teams and
+            implementing AI in business workflows.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">LLM Optimization</span>
+            <span class="skill-tag">AI Security</span>
+            <span class="skill-tag">Generative AI</span>
+            <span class="skill-tag">AI Training</span>
+            <span class="skill-tag">Automation</span>
+          </div>
+        </div>
+
+        <div class="skill-block reveal-up" style="--delay:0.2s">
+          <div class="skill-block-icon">🏷️</div>
+          <h3>Branding & Logo Design</h3>
+          <p>Complete brand identity systems — logos, visual guidelines, print materials, business cards, B2B
+            presentations and banner design.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Logo Design</span>
+            <span class="skill-tag">Brand Systems</span>
+            <span class="skill-tag">B2B Presentations</span>
+            <span class="skill-tag">Banners</span>
+            <span class="skill-tag">Business Cards</span>
+          </div>
+        </div>
+
+        <div class="skill-block reveal-up" style="--delay:0.25s">
+          <div class="skill-block-icon">🎬</div>
+          <h3>Motion & Video Design</h3>
+          <p>Motion graphics, video production, animated UI elements and dynamic presentations for conferences and
+            digital campaigns.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Motion Graphics</span>
+            <span class="skill-tag">Video Production</span>
+            <span class="skill-tag">Animation</span>
+            <span class="skill-tag">Graphics</span>
+          </div>
+        </div>
+
+
+        <div class="skill-block reveal-up" style="--delay:0.1s">
+          <div class="skill-block-icon">🌐</div>
+          <h3>WordPress Frontend</h3>
+          <p>8 years building WordPress sites from scratch — Elementor, plugin configuration, performance, backups and
+            full
+            redesigns.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">WordPress</span>
+            <span class="skill-tag">Elementor</span>
+            <span class="skill-tag">Theme Customization</span>
+            <span class="skill-tag">Plugin Config</span>
+            <span class="skill-tag">OpenCart</span>
+          </div>
+        </div>
+
+        <div class="skill-block reveal-up" style="--delay:0.3s">
+          <div class="skill-block-icon">🔒</div>
+          <h3>Cyber Security</h3>
+          <p>4 years in cyber security — security analysis, AI security testing, vulnerability assessment and secure
+            design practices.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Security Analysis</span>
+            <span class="skill-tag">AI Security</span>
+            <span class="skill-tag">Vulnerability Assessment</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <!-- Skill Proficiency Bars -->
+  <section class="section" style="background:var(--bg-2);">
+    <div class="container">
+      <span class="section-tag reveal-up">Proficiency</span>
+      <h2 class="section-title reveal-up" style="--delay:0.1s;margin-bottom:64px;">Tool Mastery</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px 80px;max-width:960px;">
+        <div class="skill-bar-list">
+          <div class="skill-bar-item reveal-up" style="--delay:0.05s">
+            <div class="skill-bar-head"><span class="skill-bar-name">Figma</span><span class="skill-bar-pct">98%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--w:0.98"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item reveal-up" style="--delay:0.1s">
+            <div class="skill-bar-head"><span class="skill-bar-name">UI/UX Design</span><span
+                class="skill-bar-pct">95%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--w:0.95"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item reveal-up" style="--delay:0.15s">
+            <div class="skill-bar-head"><span class="skill-bar-name">WordPress</span><span
+                class="skill-bar-pct">60%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--w:0.90"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item reveal-up" style="--delay:0.2s">
+            <div class="skill-bar-head"><span class="skill-bar-name">Elementor</span><span
+                class="skill-bar-pct">82%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--w:0.92"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item reveal-up" style="--delay:0.25s">
+            <div class="skill-bar-head"><span class="skill-bar-name">Branding & Logo</span><span
+                class="skill-bar-pct">88%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--w:0.88"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-bar-list">
+          <div class="skill-bar-item reveal-up" style="--delay:0.05s">
+            <div class="skill-bar-head"><span class="skill-bar-name">AI Prompt Engineering</span><span
+                class="skill-bar-pct">91%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--w:0.85"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item reveal-up" style="--delay:0.1s">
+            <div class="skill-bar-head"><span class="skill-bar-name">Motion Design</span><span
+                class="skill-bar-pct">30%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--w:0.80"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item reveal-up" style="--delay:0.15s">
+            <div class="skill-bar-head"><span class="skill-bar-name">HMI Design</span><span
+                class="skill-bar-pct">82%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--w:0.82"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item reveal-up" style="--delay:0.2s">
+            <div class="skill-bar-head"><span class="skill-bar-name">OpenCart</span><span
+                class="skill-bar-pct">25%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--w:0.75"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item reveal-up" style="--delay:0.25s">
+            <div class="skill-bar-head"><span class="skill-bar-name">Cyber Security</span><span
+                class="skill-bar-pct">77%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--w:0.72"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Web Dev Skills -->
+  <section class="section">
+    <div class="container">
+      <span class="section-tag reveal-up">Web Development</span>
+      <h2 class="section-title reveal-up" style="--delay:0.1s;margin-bottom:48px;">Web Dev Skills</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;">
+        <div class="skill-block reveal-up" style="--delay:0.05s;padding:24px;">
+          <h3 style="font-size:16px;margin-bottom:8px;">Layout of Sites on WordPress</h3>
+          <p style="font-size:13px;margin-bottom:0;">Building complete WordPress layouts from scratch with clean
+            structure.</p>
+        </div>
+        <div class="skill-block reveal-up" style="--delay:0.1s;padding:24px;">
+          <h3 style="font-size:16px;margin-bottom:8px;">Updating Sites on WP</h3>
+          <p style="font-size:13px;margin-bottom:0;">Regular updates, content management and site maintenance.</p>
+        </div>
+        <div class="skill-block reveal-up" style="--delay:0.15s;padding:24px;">
+          <h3 style="font-size:16px;margin-bottom:8px;">Website Page Redesign</h3>
+          <p style="font-size:13px;margin-bottom:0;">Redesigning existing WordPress pages with improved UX.</p>
+        </div>
+        <div class="skill-block reveal-up" style="--delay:0.2s;padding:24px;">
+          <h3 style="font-size:16px;margin-bottom:8px;">Website Development from Scratch</h3>
+          <p style="font-size:13px;margin-bottom:0;">Full WordPress site builds from zero to launch.</p>
+        </div>
+        <div class="skill-block reveal-up" style="--delay:0.05s;padding:24px;">
+          <h3 style="font-size:16px;margin-bottom:8px;">Customizing Themes</h3>
+          <p style="font-size:13px;margin-bottom:0;">Deep WordPress theme customization and child theme development.</p>
+        </div>
+        <div class="skill-block reveal-up" style="--delay:0.1s;padding:24px;">
+          <h3 style="font-size:16px;margin-bottom:8px;">Configuring Plugins</h3>
+          <p style="font-size:13px;margin-bottom:0;">Plugin setup, configuration, and conflict resolution.</p>
+        </div>
+        <div class="skill-block reveal-up" style="--delay:0.15s;padding:24px;">
+          <h3 style="font-size:16px;margin-bottom:8px;">Backups & Performance</h3>
+          <p style="font-size:13px;margin-bottom:0;">Backup management, speed optimization and minor issue resolution.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="cta-inner">
+      <div class="cta-orb cta-orb-1"></div>
+      <div class="cta-orb cta-orb-2"></div>
+      <h2 class="cta-title reveal-up">Let's put these skills<br>to work for <em>you</em>.</h2>
+      <div class="cta-actions reveal-up" style="--delay:0.1s">
+        <a href="contact.html" class="btn-primary">Hire Me <span class="btn-arrow">→</span></a>
+        <a href="projects.html" class="btn-ghost">See Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo"><img src="logo.svg" alt="ECONEV Logo"></div>
+      <div class="footer-social">
+        <a href="mailto:conevgadget@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/evghenii-conev/" target="_blank">LinkedIn</a>
+        <a href="https://www.behance.net/lizzardlab" target="_blank">Behance</a>
+        <a href="https://dribbble.com/lizzardlab" target="_blank">Dribbble</a>
+        <a href="https://www.figma.com/@evgheniiconev" target="_blank">Figma</a>
+      </div>
+      <div class="footer-copy">© 2026 Evghenii Conev. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

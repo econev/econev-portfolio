@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evghenii Conev — Lead UI/UX Designer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet">
+  <script>
+    (function () {
+      const navEntry = performance.getEntriesByType('navigation')[0];
+      const isReload = navEntry && navEntry.type === 'reload';
+      const isBackForward = navEntry && navEntry.type === 'back_forward';
+      const isInternal = document.referrer && document.referrer.includes(window.location.host);
+      if (isBackForward || (isInternal && !isReload)) {
+        document.documentElement.classList.add('preloader-skipped');
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo"><img src="logo.svg" alt="Logo"></div>
+      <div class="preloader-bar">
+        <div class="preloader-progress"></div>
+      </div>
+      <div class="preloader-percent">0%</div>
+    </div>
+  </div>
+
+  <div class="noise-overlay"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.svg" alt="ECONEV Logo">
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link">Work</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <a href="contact.html" class="nav-cta">Hire Me</a>
+      <button class="burger" id="burger">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="about.html" class="mobile-link">About</a>
+      <a href="projects.html" class="mobile-link">Work</a>
+      <a href="skills.html" class="mobile-link">Skills</a>
+      <a href="contact.html" class="mobile-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+    <div class="hero-bg-grid"></div>
+
+    <div class="hero-content">
+      <div class="hero-tag reveal-up">Lead Expert UI/UX Designer</div>
+      <h1 class="hero-title">
+        <span class="line reveal-up" style="--delay:0.1s">Evghenii</span>
+        <span class="line reveal-up" style="--delay:0.2s">Conev<span class="dot">.</span></span>
+      </h1>
+      <p class="hero-sub reveal-up" style="--delay:0.3s">UI/UX · AI Prompt Engineer · HMI · 14 years in IT
+      </p>
+      <div class="hero-actions reveal-up" style="--delay:0.4s">
+        <a href="projects.html" class="btn-primary">View Work <span class="btn-arrow">→</span></a>
+        <a href="contact.html" class="btn-ghost">Let's Talk</a>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat reveal-up" style="--delay:0.5s">
+        <span class="stat-num" data-count="100">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Projects</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat reveal-up" style="--delay:0.6s">
+        <span class="stat-num" data-count="14">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Years in IT</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat reveal-up" style="--delay:0.7s">
+        <span class="stat-num" data-count="8">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Years UI/UX</span>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>UI/UX Design</span><span class="sep">✦</span>
+      <span>AI Prompt Engineering</span><span class="sep">✦</span>
+      <span>HMI Design</span><span class="sep">✦</span>
+      <span>Branding & Logo</span><span class="sep">✦</span>
+      <span>Motion Design</span><span class="sep">✦</span>
+      <span>Figma Expert</span><span class="sep">✦</span>
+      <span>UI/UX Design</span><span class="sep">✦</span>
+      <span>AI Prompt Engineering</span><span class="sep">✦</span>
+      <span>HMI Design</span><span class="sep">✦</span>
+      <span>Branding & Logo</span><span class="sep">✦</span>
+      <span>Motion Design</span><span class="sep">✦</span>
+      <span>WordPress Frontend</span><span class="sep">✦</span>
+      <span>Figma Expert</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- Featured Work -->
+  <section class="work-section section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag reveal-up">Selected Work</span>
+        <h2 class="section-title reveal-up">Featured <br>Projects</h2>
+        <a href="projects.html" class="section-link reveal-up">All Projects →</a>
+      </div>
+
+      <div class="work-grid">
+        <div class="work-card card-large reveal-up" style="--delay:0.1s">
+          <div class="card-inner">
+            <div class="card-glow"></div>
+            <div class="card-label">UI/UX · WordPress · Branding</div>
+            <h3 class="card-title">fusionworksacademy.com</h3>
+            <p class="card-desc">Full design system, WordPress frontend and logo/branding for education platform.</p>
+            <a href="https://fusionworksacademy.com" target="_blank" class="card-link">Visit Site ↗</a>
+          </div>
+          <div class="card-number">01</div>
+        </div>
+
+        <div class="work-card reveal-up" style="--delay:0.15s">
+          <div class="card-inner">
+            <div class="card-glow"></div>
+            <div class="card-label">UI/UX · WordPress · Branding</div>
+            <h3 class="card-title">fusion.works</h3>
+            <p class="card-desc">Product design, frontend and brand identity for tech company.</p>
+            <a href="https://fusion.works" target="_blank" class="card-link">Visit Site ↗</a>
+          </div>
+          <div class="card-number">02</div>
+        </div>
+
+        <div class="work-card reveal-up" style="--delay:0.2s">
+          <div class="card-inner">
+            <div class="card-glow"></div>
+            <div class="card-label">UI/UX</div>
+            <h3 class="card-title">viar.live</h3>
+            <p class="card-desc">Immersive UI/UX design for an innovative digital platform.</p>
+            <a href="https://viar.live" target="_blank" class="card-link">Visit Site ↗</a>
+          </div>
+          <div class="card-number">03</div>
+        </div>
+
+        <div class="work-card reveal-up" style="--delay:0.25s">
+          <div class="card-inner">
+            <div class="card-glow"></div>
+            <div class="card-label">UI/UX · WordPress · Branding</div>
+            <h3 class="card-title">restatify.com</h3>
+            <p class="card-desc">Real estate platform — full UI/UX, WordPress and brand system.</p>
+            <a href="https://restatify.com" target="_blank" class="card-link">Visit Site ↗</a>
+          </div>
+          <div class="card-number">04</div>
+        </div>
+
+        <div class="work-card reveal-up" style="--delay:0.3s">
+          <div class="card-inner">
+            <div class="card-glow"></div>
+            <div class="card-label">UI/UX · WordPress</div>
+            <h3 class="card-title">kerje.se</h3>
+            <p class="card-desc">Swedish platform with custom UI/UX and WordPress implementation.</p>
+            <a href="https://kerje.se" target="_blank" class="card-link">Visit Site ↗</a>
+          </div>
+          <div class="card-number">05</div>
+        </div>
+
+        <div class="work-card reveal-up" style="--delay:0.35s">
+          <div class="card-inner">
+            <div class="card-glow"></div>
+            <div class="card-label">UI/UX · Lead Design</div>
+            <h3 class="card-title">angen.ai</h3>
+            <p class="card-desc">Lead software designer for AI-powered product and WordPress.</p>
+            <a href="https://angen.ai" target="_blank" class="card-link">Visit Site ↗</a>
+          </div>
+          <div class="card-number">06</div>
+        </div>
+
+        <div class="work-card reveal-up" style="--delay:0.4s">
+          <div class="card-inner">
+            <div class="card-glow"></div>
+            <div class="card-label">Portfolio</div>
+            <h3 class="card-title">More Projects</h3>
+            <p class="card-desc">Check out my full portfolio and discover all project categories.</p>
+            <a href="projects.html" class="card-link">View Projects ↗</a>
+          </div>
+          <div class="card-number">07</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-section section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag reveal-up">What I Do</span>
+        <h2 class="section-title reveal-up">Services</h2>
+      </div>
+      <div class="services-list">
+        <div class="service-item reveal-up" style="--delay:0.1s">
+          <div class="service-num">01</div>
+          <div class="service-content">
+            <h3>UI/UX Design</h3>
+            <p>Web apps, mobile apps, Wear OS, landing pages, websites, dashboards. Full product design from wireframe
+              to pixel-perfect deliverable.</p>
+          </div>
+          <div class="service-tags">
+            <span>Figma</span><span>Prototyping</span><span>Mobile</span>
+          </div>
+        </div>
+        <div class="service-item reveal-up" style="--delay:0.15s">
+          <div class="service-num">02</div>
+          <div class="service-content">
+            <h3>UX Analytics</h3>
+            <p>Complete analysis of the website, application, and system.
+              Identifying weaknesses, improving the user experience, and solving user problems.</p>
+          </div>
+          <div class="service-tags">
+            <span>UX</span><span>UI</span><span>Figma</span>
+          </div>
+        </div>
+        <div class="service-item reveal-up" style="--delay:0.2s">
+          <div class="service-num">03</div>
+          <div class="service-content">
+            <h3>Branding & Logo Design</h3>
+            <p>Brand identity, logo systems, visual guidelines, B2B presentations, banners, business cards and complete
+              brand packages.</p>
+          </div>
+          <div class="service-tags">
+            <span>Logo</span><span>Brand System</span><span>Print</span>
+          </div>
+        </div>
+        <div class="service-item reveal-up" style="--delay:0.25s">
+          <div class="service-num">04</div>
+          <div class="service-content">
+            <h3>AI Prompt Engineering</h3>
+            <p>AI tool integration, staff training, security analysis, optimizing language models using proven methods.
+              Generative AI for design and business.</p>
+          </div>
+          <div class="service-tags">
+            <span>AI Tools</span><span>Automation</span><span>LLM</span>
+          </div>
+        </div>
+        <div class="service-item reveal-up" style="--delay:0.3s">
+          <div class="service-num">05</div>
+          <div class="service-content">
+            <h3>HMI & Game UI</h3>
+            <p>Human-Machine Interface design, game UI/UX, interactive system interfaces for smart home and industrial
+              applications.</p>
+          </div>
+          <div class="service-tags">
+            <span>HMI</span><span>Game UI</span><span>Interactive</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <div class="cta-orb cta-orb-1"></div>
+      <div class="cta-orb cta-orb-2"></div>
+      <h2 class="cta-title reveal-up">Ready to build something <em>exceptional</em>?</h2>
+      <p class="cta-sub reveal-up">Let's create digital experiences that leave a mark.</p>
+      <div class="cta-actions reveal-up">
+        <a href="mailto:conevgadget@gmail.com" class="btn-primary"> Contact me <span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo"><img src="logo.svg" alt="ECONEV Logo" style="height:32px;"></div>
+      <div class="footer-social">
+        <a href="mailto:conevgadget@gmail.com" target="_blank">Email</a>
+        <a href="https://www.linkedin.com/in/evghenii-conev/" target="_blank">LinkedIn</a>
+        <a href="https://www.behance.net/lizzardlab" target="_blank">Behance</a>
+        <a href="https://dribbble.com/lizzardlab" target="_blank">Dribbble</a>
+        <a href="https://www.figma.com/@evgheniiconev" target="_blank">Figma</a>
+      </div>
+      <div class="footer-copy">© 2026 Evghenii Conev. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

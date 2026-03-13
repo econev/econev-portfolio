@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work — Evghenii Conev</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet">
+  <script>
+    (function () {
+      const navEntry = performance.getEntriesByType('navigation')[0];
+      const isReload = navEntry && navEntry.type === 'reload';
+      const isBackForward = navEntry && navEntry.type === 'back_forward';
+      const isInternal = document.referrer && document.referrer.includes(window.location.host);
+      if (isBackForward || (isInternal && !isReload)) {
+        document.documentElement.classList.add('preloader-skipped');
+      }
+    })();
+  </script>
+</head>
+
+<body class="projects-page">
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo"><img src="logo.svg" alt="Logo"></div>
+      <div class="preloader-bar">
+        <div class="preloader-progress"></div>
+      </div>
+      <div class="preloader-percent">0%</div>
+    </div>
+  </div>
+
+
+  <div class="noise-overlay"></div>
+
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.svg" alt="ECONEV Logo">
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link active">Work</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <a href="contact.html" class="nav-cta">Hire Me</a>
+      <button class="burger" id="burger"><span></span><span></span></button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="about.html" class="mobile-link">About</a>
+      <a href="projects.html" class="mobile-link">Work</a>
+      <a href="skills.html" class="mobile-link">Skills</a>
+      <a href="contact.html" class="mobile-link">Contact</a>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-inner">
+      <div class="page-tag reveal-up">Portfolio</div>
+      <h1 class="page-title reveal-up" style="--delay:0.1s">100+<br>Projects<span style="color:var(--accent)">.</span>
+      </h1>
+      <p class="page-sub reveal-up" style="--delay:0.2s">A selection of work spanning UI/UX, branding, WordPress
+        development, motion design and AI-powered product experiences.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <!-- Filter -->
+      <div class="project-filter reveal-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="uiux">UI/UX</button>
+        <button class="filter-btn" data-filter="wordpress">WordPress</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+        <button class="filter-btn" data-filter="motion">Motion</button>
+        <button class="filter-btn" data-filter="fintech">Fintech</button>
+        <button class="filter-btn" data-filter="realestate">Real Estate</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Row 1 -->
+        <div class="project-card reveal-up" style="--delay:0.05s" data-tags="uiux wordpress branding">
+          <div class="project-card-tag">UI/UX · WordPress · Branding</div>
+          <h3>fusionworksacademy.com</h3>
+          <p>Full-stack design system for education platform — from wireframes to WordPress launch plus brand identity.
+          </p>
+          <div class="project-card-footer">
+            <div class="project-types">
+              <span class="project-type-tag">UI/UX</span>
+              <span class="project-type-tag">WordPress</span>
+              <span class="project-type-tag">Logo</span>
+            </div>
+            <a href="https://fusionworksacademy.com" target="_blank" class="project-arrow">↗</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.1s" data-tags="uiux wordpress branding">
+          <div class="project-card-tag">UI/UX · WordPress · Branding</div>
+          <h3>fusion.works</h3>
+          <p>Tech company brand system, product UI and WordPress frontend development.</p>
+          <div class="project-card-footer">
+            <div class="project-types">
+              <span class="project-type-tag">UI/UX</span>
+              <span class="project-type-tag">WordPress</span>
+              <span class="project-type-tag">Branding</span>
+            </div>
+            <a href="https://fusion.works" target="_blank" class="project-arrow">↗</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.15s" data-tags="uiux">
+          <div class="project-card-tag">UI/UX</div>
+          <h3>viar.live</h3>
+          <p>Immersive UI/UX design for an innovative live streaming digital platform.</p>
+          <div class="project-card-footer">
+            <div class="project-types"><span class="project-type-tag">UI/UX</span></div>
+            <a href="https://viar.live" target="_blank" class="project-arrow">↗</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.05s" data-tags="uiux">
+          <div class="project-card-tag">UI/UX</div>
+          <h3>lectogo.com</h3>
+          <p>EdTech platform UI/UX — clean, conversion-focused learning interface design.</p>
+          <div class="project-card-footer">
+            <div class="project-types"><span class="project-type-tag">UI/UX</span></div>
+            <a href="https://lectogo.com" target="_blank" class="project-arrow">↗</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.1s" data-tags="uiux">
+          <div class="project-card-tag">UI/UX</div>
+          <h3>vext.co</h3>
+          <p>Modern SaaS product interface design with focus on developer experience.</p>
+          <div class="project-card-footer">
+            <div class="project-types"><span class="project-type-tag">UI/UX</span></div>
+            <a href="https://vext.co" target="_blank" class="project-arrow">↗</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.15s" data-tags="uiux branding">
+          <div class="project-card-tag">UI/UX · Branding</div>
+          <h3>Food Delivery Service</h3>
+          <p>Full brand identity and product UI for restaurant delivery platform.</p>
+          <div class="project-card-footer">
+            <div class="project-types">
+              <span class="project-type-tag">UI/UX</span>
+              <span class="project-type-tag">Branding</span>
+            </div>
+            <span class="project-arrow" style="opacity:0.3">↗</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.05s" data-tags="uiux branding">
+          <div class="project-card-tag">UI/UX · Branding</div>
+          <h3>Smart Home Systems</h3>
+          <p>HMI and UI/UX design for smart home automation control system with logo design.</p>
+          <div class="project-card-footer">
+            <div class="project-types">
+              <span class="project-type-tag">HMI</span>
+              <span class="project-type-tag">UI/UX</span>
+              <span class="project-type-tag">Logo</span>
+            </div>
+            <span class="project-arrow" style="opacity:0.3">↗</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.1s" data-tags="uiux motion branding">
+          <div class="project-card-tag">UI/UX · Motion · Video · Logo</div>
+          <h3>Moldova Developer Conference (#MDC)</h3>
+          <p>Full design suite for Moldova's premier developer conference — UI, motion, video, graphics and branding.
+          </p>
+          <div class="project-card-footer">
+            <div class="project-types">
+              <span class="project-type-tag">UI/UX</span>
+              <span class="project-type-tag">Motion</span>
+              <span class="project-type-tag">Video</span>
+            </div>
+            <span class="project-arrow" style="opacity:0.3">↗</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.15s" data-tags="uiux">
+          <div class="project-card-tag">UI/UX</div>
+          <h3>Water Company</h3>
+          <p>Clean, brand-focused UI/UX design for water distribution company.</p>
+          <div class="project-card-footer">
+            <div class="project-types"><span class="project-type-tag">UI/UX</span></div>
+            <span class="project-arrow" style="opacity:0.3">↗</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.05s" data-tags="uiux branding">
+          <div class="project-card-tag">UI/UX · Branding</div>
+          <h3>Fly Business Tickets</h3>
+          <p>Premium airline ticket booking platform UI/UX and brand identity.</p>
+          <div class="project-card-footer">
+            <div class="project-types">
+              <span class="project-type-tag">UI/UX</span>
+              <span class="project-type-tag">Branding</span>
+            </div>
+            <span class="project-arrow" style="opacity:0.3">↗</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.1s" data-tags="uiux fintech branding">
+          <div class="project-card-tag">UI/UX · Branding · Fintech</div>
+          <h3>Crypto Payment Company</h3>
+          <p>Crypto payment gateway UI/UX with complete brand identity system.</p>
+          <div class="project-card-footer">
+            <div class="project-types">
+              <span class="project-type-tag">UI/UX</span>
+              <span class="project-type-tag">Fintech</span>
+              <span class="project-type-tag">Branding</span>
+            </div>
+            <span class="project-arrow" style="opacity:0.3">↗</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.15s" data-tags="uiux fintech">
+          <div class="project-card-tag">UI/UX · Fintech</div>
+          <h3>Global Expertise Service</h3>
+          <p>Enterprise fintech service UI/UX design for global consulting platform.</p>
+          <div class="project-card-footer">
+            <div class="project-types">
+              <span class="project-type-tag">UI/UX</span>
+              <span class="project-type-tag">Fintech</span>
+            </div>
+            <span class="project-arrow" style="opacity:0.3">↗</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.05s" data-tags="uiux fintech">
+          <div class="project-card-tag">UI/UX · Fintech</div>
+          <h3>Fintech Company</h3>
+          <p>Modern fintech dashboard design with complex data visualization.</p>
+          <div class="project-card-footer">
+            <div class="project-types">
+              <span class="project-type-tag">UI/UX</span>
+              <span class="project-type-tag">Fintech</span>
+            </div>
+            <span class="project-arrow" style="opacity:0.3">↗</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.1s" data-tags="uiux wordpress">
+          <div class="project-card-tag">UI/UX · WordPress</div>
+          <h3>kerje.se</h3>
+          <p>Swedish HR/recruitment platform — UI/UX design and WordPress frontend build.</p>
+          <div class="project-card-footer">
+            <div class="project-types">
+              <span class="project-type-tag">UI/UX</span>
+              <span class="project-type-tag">WordPress</span>
+            </div>
+            <a href="https://kerje.se" target="_blank" class="project-arrow">↗</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.15s" data-tags="uiux wordpress branding realestate">
+          <div class="project-card-tag">UI/UX · WordPress · Branding · Real Estate</div>
+          <h3>restatify.com</h3>
+          <p>Real estate SaaS platform — full product design, WordPress and complete brand system.</p>
+          <div class="project-card-footer">
+            <div class="project-types">
+              <span class="project-type-tag">UI/UX</span>
+              <span class="project-type-tag">WordPress</span>
+              <span class="project-type-tag">Branding</span>
+            </div>
+            <a href="https://restatify.com" target="_blank" class="project-arrow">↗</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.05s" data-tags="uiux">
+          <div class="project-card-tag">UI/UX</div>
+          <h3>Megaverse</h3>
+          <p>Metaverse/Web3 platform UI/UX design with immersive visual language.</p>
+          <div class="project-card-footer">
+            <div class="project-types"><span class="project-type-tag">UI/UX</span></div>
+            <span class="project-arrow" style="opacity:0.3">↗</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.1s" data-tags="uiux">
+          <div class="project-card-tag">UI/UX</div>
+          <h3>dely.io</h3>
+          <p>Delivery logistics platform with clean dashboard UI/UX.</p>
+          <div class="project-card-footer">
+            <div class="project-types"><span class="project-type-tag">UI/UX</span></div>
+            <a href="https://dely.io" target="_blank" class="project-arrow">↗</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.15s" data-tags="uiux wordpress branding">
+          <div class="project-card-tag">UI/UX · WordPress · Branding</div>
+          <h3>cropbytes.com</h3>
+          <p>Blockchain farming game — UI/UX, WordPress frontend and complete brand identity.</p>
+          <div class="project-card-footer">
+            <div class="project-types">
+              <span class="project-type-tag">UI/UX</span>
+              <span class="project-type-tag">WordPress</span>
+            </div>
+            <a href="https://cropbytes.com" target="_blank" class="project-arrow">↗</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.05s" data-tags="uiux">
+          <div class="project-card-tag">UI/UX</div>
+          <h3>CanMe</h3>
+          <p>Social/community app UI/UX design with modern mobile-first approach.</p>
+          <div class="project-card-footer">
+            <div class="project-types"><span class="project-type-tag">UI/UX</span></div>
+            <span class="project-arrow" style="opacity:0.3">↗</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.1s" data-tags="uiux wordpress branding motion">
+          <div class="project-card-tag">UI/UX · B2B Presentation · Branding</div>
+          <h3>epitome</h3>
+          <p>Comprehensive B2B design package — UI/UX, video, graphics, logo, slides and presentations.</p>
+          <div class="project-card-footer">
+            <div class="project-types">
+              <span class="project-type-tag">UI/UX</span>
+              <span class="project-type-tag">Odoo</span>
+              <span class="project-type-tag">Branding</span>
+            </div>
+            <span class="project-arrow" style="opacity:0.3">↗</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.15s" data-tags="uiux fintech wordpress branding">
+          <div class="project-card-tag">UI/UX · WordPress · Fintech</div>
+          <h3>cyphertax</h3>
+          <p>Crypto tax platform WordPress frontend and UI/UX design.</p>
+          <div class="project-card-footer">
+            <div class="project-types">
+              <span class="project-type-tag">UI/UX</span>
+              <span class="project-type-tag">WordPress</span>
+              <span class="project-type-tag">Fintech</span>
+            </div>
+            <span class="project-arrow" style="opacity:0.3">↗</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.05s" data-tags="uiux">
+          <div class="project-card-tag">UI/UX</div>
+          <h3>tilikumtx.com</h3>
+          <p>Financial services platform UI/UX design with clean, trust-oriented visual system.</p>
+          <div class="project-card-footer">
+            <div class="project-types"><span class="project-type-tag">UI/UX</span></div>
+            <a href="https://tilikumtx.com" target="_blank" class="project-arrow">↗</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.1s" data-tags="uiux wordpress branding">
+          <div class="project-card-tag">UI/UX · WordPress · Branding</div>
+          <h3>DOB Notifications App</h3>
+          <p>Document/notification management app — full UI/UX design, WordPress and branding.</p>
+          <div class="project-card-footer">
+            <div class="project-types">
+              <span class="project-type-tag">UI/UX</span>
+              <span class="project-type-tag">WordPress</span>
+            </div>
+            <span class="project-arrow" style="opacity:0.3">↗</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.15s" data-tags="uiux">
+          <div class="project-card-tag">UI/UX · AI Platform</div>
+          <h3>FusionAI</h3>
+          <p>AI-powered product suite UI/UX design with focus on human-AI interaction flows.</p>
+          <div class="project-card-footer">
+            <div class="project-types"><span class="project-type-tag">UI/UX</span></div>
+            <span class="project-arrow" style="opacity:0.3">↗</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.05s" data-tags="uiux wordpress">
+          <div class="project-card-tag">UI/UX · WordPress</div>
+          <h3>auktion.se</h3>
+          <p>Swedish auction platform — UI/UX and WordPress implementation.</p>
+          <div class="project-card-footer">
+            <div class="project-types">
+              <span class="project-type-tag">UI/UX</span>
+              <span class="project-type-tag">WordPress</span>
+            </div>
+            <a href="https://auktion.se" target="_blank" class="project-arrow">↗</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.1s" data-tags="uiux wordpress">
+          <div class="project-card-tag">UI/UX · WordPress</div>
+          <h3>winterfold.com</h3>
+          <p>Creative WordPress website with custom UI/UX design.</p>
+          <div class="project-card-footer">
+            <div class="project-types">
+              <span class="project-type-tag">UI/UX</span>
+              <span class="project-type-tag">WordPress</span>
+            </div>
+            <a href="https://winterfold.com" target="_blank" class="project-arrow">↗</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.15s" data-tags="uiux fintech motion branding">
+          <div class="project-card-tag">UI/UX · Branding · B2B Presentations</div>
+          <h3>SliceFi</h3>
+          <p>DeFi/fintech product — full brand suite including video, graphics, logo, slides and B2B presentations.</p>
+          <div class="project-card-footer">
+            <div class="project-types">
+              <span class="project-type-tag">UI/UX</span>
+              <span class="project-type-tag">Branding</span>
+              <span class="project-type-tag">Motion</span>
+            </div>
+            <span class="project-arrow" style="opacity:0.3">↗</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.05s" data-tags="uiux wordpress branding">
+          <div class="project-card-tag">UI/UX · WordPress · Branding</div>
+          <h3>nordicspring.se</h3>
+          <p>Nordic lifestyle brand — UI/UX, WordPress, graphics and logo design system.</p>
+          <div class="project-card-footer">
+            <div class="project-types">
+              <span class="project-type-tag">UI/UX</span>
+              <span class="project-type-tag">WordPress</span>
+            </div>
+            <a href="https://nordicspring.se" target="_blank" class="project-arrow">↗</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.1s" data-tags="uiux wordpress">
+          <div class="project-card-tag">UI/UX · WordPress</div>
+          <h3>the.hosting</h3>
+          <p>VPS/hosting company complete UI/UX and WordPress solution.</p>
+          <div class="project-card-footer">
+            <div class="project-types">
+              <span class="project-type-tag">UI/UX</span>
+              <span class="project-type-tag">WordPress</span>
+            </div>
+            <span class="project-arrow" style="opacity:0.3">↗</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.15s" data-tags="uiux wordpress branding">
+          <div class="project-card-tag">UI/UX · Lead Design · WordPress</div>
+          <h3>angen.ai</h3>
+          <p>AI software company — Lead designer on product UI/UX and WordPress implementation.</p>
+          <div class="project-card-footer">
+            <div class="project-types">
+              <span class="project-type-tag">UI/UX</span>
+              <span class="project-type-tag">Lead Design</span>
+              <span class="project-type-tag">WordPress</span>
+            </div>
+            <a href="https://angen.ai" target="_blank" class="project-arrow">↗</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.05s" data-tags="uiux wordpress branding motion">
+          <div class="project-card-tag">UI/UX · Lead Design · Video · Branding</div>
+          <h3>endurio.se</h3>
+          <p>Lead software designer — UI/UX, video, graphics, logo, branding and B2B presentations.</p>
+          <div class="project-card-footer">
+            <div class="project-types">
+              <span class="project-type-tag">UI/UX</span>
+              <span class="project-type-tag">Lead Design</span>
+              <span class="project-type-tag">Motion</span>
+            </div>
+            <a href="https://endurio.se" target="_blank" class="project-arrow">↗</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.1s" data-tags="uiux realestate wordpress branding">
+          <div class="project-card-tag">UI/UX · WordPress · Branding · Real Estate</div>
+          <h3>Sliceraizer</h3>
+          <p>Real estate tokenization platform — full design and branding package.</p>
+          <div class="project-card-footer">
+            <div class="project-types">
+              <span class="project-type-tag">UI/UX</span>
+              <span class="project-type-tag">WordPress</span>
+              <span class="project-type-tag">Branding</span>
+            </div>
+            <span class="project-arrow" style="opacity:0.3">↗</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.15s" data-tags="uiux wordpress branding realestate">
+          <div class="project-card-tag">UI/UX · WordPress · Branding · Real Estate</div>
+          <h3>Real Estate Agency</h3>
+          <p>Real estate agency brand and digital presence — UI/UX, WordPress, graphics, logo, slides.</p>
+          <div class="project-card-footer">
+            <div class="project-types">
+              <span class="project-type-tag">UI/UX</span>
+              <span class="project-type-tag">WordPress</span>
+            </div>
+            <span class="project-arrow" style="opacity:0.3">↗</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.05s" data-tags="uiux wordpress branding">
+          <div class="project-card-tag">UI/UX · WordPress · Branding</div>
+          <h3>VPS Euro Hosting</h3>
+          <p>European VPS hosting company UI/UX and full brand system.</p>
+          <div class="project-card-footer">
+            <div class="project-types">
+              <span class="project-type-tag">UI/UX</span>
+              <span class="project-type-tag">Branding</span>
+            </div>
+            <span class="project-arrow" style="opacity:0.3">↗</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.1s" data-tags="uiux wordpress branding">
+          <div class="project-card-tag">UI/UX · WordPress</div>
+          <h3>Hosting Company</h3>
+          <p>UFO-branded hosting company — UI/UX design and WordPress frontend development.</p>
+          <div class="project-card-footer">
+            <div class="project-types">
+              <span class="project-type-tag">UI/UX</span>
+              <span class="project-type-tag">WordPress</span>
+            </div>
+            <span class="project-arrow" style="opacity:0.3">↗</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.15s" data-tags="uiux motion branding">
+          <div class="project-card-tag">UI/UX · Motion · Video</div>
+          <h3>Agenția de Guvernare Electronică</h3>
+          <p>Government e-agency — UI/UX design, video production and motion graphics.</p>
+          <div class="project-card-footer">
+            <div class="project-types">
+              <span class="project-type-tag">UI/UX</span>
+              <span class="project-type-tag">Video</span>
+              <span class="project-type-tag">Motion</span>
+            </div>
+            <span class="project-arrow" style="opacity:0.3">↗</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="cta-inner">
+      <div class="cta-orb cta-orb-1"></div>
+      <div class="cta-orb cta-orb-2"></div>
+      <h2 class="cta-title reveal-up">Have a project<br>in <em>mind</em>?</h2>
+      <p class="cta-sub reveal-up" style="--delay:0.1s">Let's create something remarkable together.</p>
+      <div class="cta-actions reveal-up" style="--delay:0.2s">
+        <a href="contact.html" class="btn-primary">Start a Project <span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo"><img src="logo.svg" alt="ECONEV Logo"></div>
+      <div class="footer-social">
+        <a href="mailto:conevgadget@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/evghenii-conev/" target="_blank">LinkedIn</a>
+        <a href="https://www.behance.net/lizzardlab" target="_blank">Behance</a>
+        <a href="https://dribbble.com/lizzardlab" target="_blank">Dribbble</a>
+        <a href="https://www.figma.com/@evgheniiconev" target="_blank">Figma</a>
+      </div>
+      <div class="footer-copy">© 2026 Evghenii Conev. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
