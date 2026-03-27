@@ -252,3 +252,19 @@ document.querySelectorAll('a[href$=".html"]').forEach(link => {
     }
   });
 });
+// --- CLICKABLE CARDS ---
+document.querySelectorAll('.work-card, .project-card').forEach(card => {
+  const link = card.querySelector('a.card-link, a.project-arrow, a.project-card-link, a[href$=".html"]');
+  if (!link) return;
+  
+  card.style.cursor = 'pointer';
+  card.addEventListener('click', (e) => {
+    if (e.target.closest('a') || e.target.closest('button')) return;
+    
+    if (link.target === '_blank') {
+      window.open(link.href, '_blank');
+    } else {
+      link.click();
+    }
+  });
+});
